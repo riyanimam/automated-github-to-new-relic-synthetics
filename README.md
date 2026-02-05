@@ -2,6 +2,8 @@
 
 Automatically synchronize synthetic monitoring scripts from GitHub to New Relic Synthetics. Push your monitor changes to GitHub and watch them deploy automatically to New Relic!
 
+> **📋 Quick Start:** See [REQUIREMENTS.md](REQUIREMENTS.md) for exactly what you need to provide to get started.
+
 ## 🚀 Features
 
 - **Automatic Deployment**: Push changes to GitHub and monitors are automatically created/updated in New Relic
@@ -298,6 +300,14 @@ npm run sync
 
 ## 📚 Additional Resources
 
+### Documentation Files in This Repository
+- **[REQUIREMENTS.md](REQUIREMENTS.md)** - What you need to provide and how to get it
+- **[SETUP_GUIDE.md](SETUP_GUIDE.md)** - Detailed step-by-step setup instructions
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick commands and common patterns
+- **[MONITOR_EXAMPLES.md](MONITOR_EXAMPLES.md)** - Comprehensive examples for all monitor types
+- **[templates/](templates/)** - Ready-to-use templates for creating new monitors
+
+### External Resources
 - [New Relic Synthetics API Documentation](https://docs.newrelic.com/docs/apis/synthetics-rest-api/)
 - [New Relic Synthetics Scripting Reference](https://docs.newrelic.com/docs/synthetics/synthetic-monitoring/scripting-monitors/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
