@@ -1,0 +1,15 @@
+{
+  "name": "Example Simple Browser Check",
+  "type": "SIMPLE",
+  "frequency": 10,
+  "uri": "https://example.com",
+  "locations": [
+    "AWS_US_EAST_1"
+  ],
+  "status": "ENABLED",
+  "options": {
+    "validationString": "Example Domain",
+    "verifySSL": true,
+    "slaThreshold": 7.0
+  }
+}

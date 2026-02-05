@@ -1,0 +1,15 @@
+{
+  "name": "YOUR_MONITOR_NAME_HERE",
+  "type": "SIMPLE",
+  "frequency": 10,
+  "uri": "https://your-website.com",
+  "locations": [
+    "AWS_US_EAST_1"
+  ],
+  "status": "ENABLED",
+  "options": {
+    "validationString": "Expected text on the page",
+    "verifySSL": true,
+    "slaThreshold": 7.0
+  }
+}

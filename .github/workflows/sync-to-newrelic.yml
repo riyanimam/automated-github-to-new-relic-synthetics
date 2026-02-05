@@ -1,0 +1,44 @@
+name: Sync to New Relic Synthetics
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'monitors/**'
+      - 'scripts/sync-to-newrelic.js'
+  workflow_dispatch:
+
+jobs:
+  sync-monitors:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Sync monitors to New Relic
+        env:
+          NEW_RELIC_API_KEY: ${{ secrets.NEW_RELIC_API_KEY }}
+          NEW_RELIC_ACCOUNT_ID: ${{ secrets.NEW_RELIC_ACCOUNT_ID }}
+        run: npm run sync
+      
+      - name: Summary
+        if: success()
+        run: |
+          echo "✅ Successfully synchronized monitors to New Relic Synthetics" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Monitors have been created or updated in your New Relic account." >> $GITHUB_STEP_SUMMARY
