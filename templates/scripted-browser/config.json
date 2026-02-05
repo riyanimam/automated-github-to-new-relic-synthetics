@@ -1,0 +1,12 @@
+{
+  "name": "YOUR_MONITOR_NAME_HERE",
+  "type": "SCRIPT_BROWSER",
+  "frequency": 10,
+  "locations": [
+    "AWS_US_EAST_1"
+  ],
+  "status": "ENABLED",
+  "options": {
+    "slaThreshold": 7.0
+  }
+}

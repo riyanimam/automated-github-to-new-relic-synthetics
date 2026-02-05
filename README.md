@@ -84,6 +84,10 @@ npm run sync
 │       └── example-simple-check/
 │           ├── config.json
 │           └── script.js
+├── templates/                # Templates for new monitors
+│   ├── scripted-browser/
+│   ├── scripted-api/
+│   └── simple-browser/
 ├── scripts/
 │   └── sync-to-newrelic.js  # Sync script
 ├── .github/
@@ -93,6 +97,20 @@ npm run sync
 ```
 
 ## 📝 Creating a New Monitor
+
+### Quick Start with Templates
+
+The fastest way to create a new monitor is to copy from the templates:
+
+```bash
+# Copy template for your monitor type
+cp -r templates/scripted-api monitors/scripted-api/my-new-monitor
+
+# Edit the config and script files
+# Then commit and push!
+```
+
+See [templates/README.md](templates/README.md) for more details.
 
 ### Step 1: Create Monitor Directory
 
