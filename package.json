@@ -1,0 +1,23 @@
+{
+  "name": "automated-github-to-new-relic-synthetics",
+  "version": "1.0.0",
+  "description": "Automated synchronization of GitHub repository changes to New Relic Synthetics monitors",
+  "main": "scripts/sync-to-newrelic.js",
+  "scripts": {
+    "sync": "node scripts/sync-to-newrelic.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "new-relic",
+    "synthetics",
+    "monitoring",
+    "automation",
+    "github-actions"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  }
+}

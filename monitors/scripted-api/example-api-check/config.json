@@ -1,0 +1,13 @@
+{
+  "name": "Example API Check",
+  "type": "SCRIPT_API",
+  "frequency": 5,
+  "locations": [
+    "AWS_US_EAST_1",
+    "AWS_US_WEST_1"
+  ],
+  "status": "ENABLED",
+  "options": {
+    "slaThreshold": 5.0
+  }
+}
